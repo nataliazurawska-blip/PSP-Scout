@@ -190,6 +190,88 @@ Volume fit: Any size
 Best for: Early-stage fintechs needing a banking license; non-fintechs (SaaS, HR tech, travel, mobility) embedding financial services in EU
 Avoid if: You need global payment corridors beyond EUR/EU
 
+--- Adyen ---
+Type: Own end-to-end infrastructure; direct connections to Visa, Mastercard, and all major card schemes globally
+Payment rails: Cards (own acquiring licenses in EU, UK, US, APAC), SEPA, local payment methods (iDEAL, Bancontact, PayNow, Alipay, WeChat Pay, PIX, ACH, BACS, BECS, and 100+ more)
+Currencies: 150+ currencies; settlement in 23+ currencies
+Geographic reach: 45+ countries with local acquiring; global card acceptance
+Pricing model: Custom enterprise; interchange++ model; processing fee + payment method fee per transaction; no monthly fees for transaction volume — but high minimums
+Products: Online payments, in-store (POS), Adyen for Platforms (marketplace/split), card issuing, balance accounts, payouts, embedded finance (Adyen for Embedded Finance), Uplift (AI-based authorization optimization)
+Clients: Uber, eBay, McDonald's, Spotify, L'Oreal, Booking.com
+Strengths: Single technical platform for in-store + online; own acquiring in all major markets = highest authorization rates; excellent analytics; Adyen for Platforms is one of the best marketplace payment solutions available; no third-party acquirers in the chain; genuinely global; used by tier-1 enterprises worldwide
+Weaknesses: Enterprise only — high minimum volumes required (typically EUR 1M+ annual volume to be onboarded). Long sales and onboarding process. Expensive for low volumes. Not suitable for early-stage.
+Volume fit: Large to enterprise
+Best for: Enterprise e-commerce, global marketplaces, omnichannel (online + in-store) businesses, platforms needing embedded finance, companies where authorization rate optimization matters
+Avoid if: Early-stage, low volume, or you need a fast onboarding
+
+--- Checkout.com ---
+Type: Own acquiring infrastructure; licensed in EU, UK, US, UAE, Singapore, and more
+Payment rails: Cards (Visa, Mastercard, Amex — own acquirer), SEPA, local APMs (iDEAL, Bancontact, Sofort, PIX, GrabPay, Alipay, and 100+), open banking
+Currencies: 150+ currencies; domestic coverage in 45+ countries
+Pricing model: Flat-rate custom pricing; interchange++ available; no setup fees; no account maintenance fees; transparent card scheme and interchange costs; free for registered charities
+Products: Online payments, payouts (to bank accounts and cards), card issuing, fraud detection (AI-powered), 3DS authentication, identity verification, vault (tokenization), intelligent acceptance (AI auth optimization), treasury & FX, unified payments API
+Clients: Sony, Patreon, Wise, Grab, SHEIN, Getty Images
+Strengths: Own infrastructure = reliable and fast; excellent developer API (rivals Stripe); strong in fintech, gaming, and crypto (flexible on restricted industries); transparent pricing; good fraud tools built in; strong in MENA and APAC; unified API for all features
+Weaknesses: Expensive for low volume; limited payout reach compared to dedicated payout providers (Wise/Ebury); long onboarding for high-risk categories
+Volume fit: Mid to enterprise
+Best for: E-commerce, fintech, gaming, crypto, marketplace collection, travel; companies that want a Stripe-quality API with broader global acquiring; iGaming as a complement acquirer
+Avoid if: Primary payout/cross-border provider, or very early-stage with minimal volume
+
+--- GoCardless ---
+Type: Direct debit and open banking specialist; FCA authorized (UK); licensed across EU, US, Australia
+Payment rails: UK Direct Debit (Bacs), SEPA Direct Debit, ACH (US), BECS (Australia), Autogiro (Sweden), BetalingsService (Denmark); open banking (Instant Bank Pay, Variable Recurring Payments)
+Currencies: GBP, EUR, USD, AUD, SEK, DKK, CAD, NZD
+Geographic reach: 30+ countries; strongest in UK and EU
+Pricing model: From 0.5% + GBP 0.20 per transaction (UK); volume discounts; Success+ (automated payment retry) add-on
+Products: Direct debit collection (subscriptions, recurring billing, instalments), one-off bank payments (Instant Bank Pay), outbound payments, open banking (Variable Recurring Payments), 350+ integrations (Xero, QuickBooks, Zuora, Salesforce), Success+ (intelligent payment retry), Protect+ (fraud protection)
+Strengths: The best specialist for recurring/subscription payments via bank debit; low cost vs. cards; no card expiry churn; pull-based so merchant controls timing; excellent integrations with accounting software; open banking VRP is genuinely innovative; easy API; strong compliance
+Weaknesses: NOT a cross-border payout provider. Not suitable for one-off high-value B2B transfers. Slower than cards (Bacs takes 2-3 days). Cash flow timing less predictable. Limited to supported countries.
+Volume fit: Any size — SMB to enterprise
+Best for: SaaS/subscription businesses, insurance premium collection (recurring), utilities, membership organizations, B2B invoicing via direct debit, any business where recurring automated collection is core
+Avoid if: You need instant collection, one-off B2B cross-border payments, or payout infrastructure
+
+--- Mangopay ---
+Type: Embedded payment infrastructure for platforms and marketplaces; EU EMI licensed (Luxembourg)
+Payment rails: Cards (Visa, Mastercard via acquiring partners), SEPA Credit Transfer, SEPA Direct Debit, bank wires; payouts to bank accounts
+Currencies: EUR primary; GBP, USD and others supported
+Geographic reach: EU/EEA; UK; expanding globally
+Pricing model: Custom B2B pricing; per-transaction fees; monthly platform fee
+Products: E-wallets per user (fully segregated), card collection, bank transfer collection, marketplace split payments and escrow, payouts to bank accounts, KYC/KYB verification, fraud protection, no-code dashboard
+Clients: Vinted, Leboncoin, Rakuten, La Redoute, Chrono24
+Strengths: Purpose-built for marketplaces and platforms — segregated e-wallets per buyer and seller; escrow and split payment built-in; white-label; flexible KYC flows; strong EU compliance; no need for own EMI license; better for marketplaces than Stripe Connect in EU context
+Weaknesses: EU/EEA-focused — limited global corridor coverage. Not for B2B cross-border payouts. Less strong outside EU. Card acquiring is via partners, not own infrastructure.
+Volume fit: Any size, designed for platforms
+Best for: C2C and B2C marketplaces (second-hand goods, services, rentals), crowdfunding platforms, sharing economy, any EU platform that needs to hold and disburse funds between multiple parties
+Avoid if: You need global corridor payouts beyond EU, or you're not a platform/marketplace model
+
+--- Trustly ---
+Type: Open banking payment specialist; licensed in EU (Swedish FSA), UK (FCA), US (state money transmitter licenses)
+Payment rails: Open banking / Pay by Bank — bank-to-bank transfers using direct bank API connections; no card network; real-time in supported markets
+Currencies: EUR, GBP, SEK, NOK, DKK, USD, and more
+Geographic reach: 30+ countries; strongest in Nordics, EU, and US; expanding to LATAM
+Pricing model: Custom per-transaction pricing; typically per payment fee, lower than card fees; no interchange
+Products: Pay by Bank (instant open banking collection), payouts (to bank accounts), account verification, data services (income verification, balance checks)
+Clients: Major iGaming operators (Kindred, 888, Betsson), BNP Paribas, Klarna, iGaming platforms across Nordics
+Strengths: No card network fees — significantly cheaper than card for high volumes; instant bank-to-bank in supported markets; high conversion in Nordics; excellent for iGaming deposits (near-instant, no chargeback risk); open banking leader in EU/UK; no card fraud or chargebacks; account verification built-in
+Weaknesses: Limited to countries where open banking regulation exists. Consumer adoption varies — not all users comfortable with bank login. Not a full-service PSP (no card acquiring). Coverage thins outside Nordics/EU.
+Volume fit: Mid to large
+Best for: iGaming deposits and withdrawals (especially Nordics), subscription collection where bank debit isn't available, fintech apps needing instant bank-to-bank, high-volume e-commerce wanting to reduce card fees
+Avoid if: You need card acceptance, or primary coverage in markets where open banking adoption is low
+
+--- Modulr ---
+Type: Payments-as-a-Service (PaaS) infrastructure; FCA authorized Payment Institution (UK); passported into EEA
+Payment rails: Faster Payments (UK), CHAPS, Bacs, SEPA Credit Transfer, SEPA Instant
+Currencies: GBP, EUR primary
+Geographic reach: UK and EU; strong UK focus
+Pricing model: Custom B2B API pricing; account fees + per-transaction fees; no minimum volumes
+Products: Real-time payment accounts (virtual IBANs and sort code/account numbers per client), Faster Payments, CHAPS, Bacs payments, SEPA, bulk payments, payment scheduling, embedded payment accounts for fintechs
+Clients: Revolut (early infrastructure), Tide, Wagestream, Payrow, multiple payroll and HR platforms
+Strengths: Bank-grade payment infrastructure without needing own PI/EMI license; virtual accounts per client (own sort code and account number, not pooling); real-time Faster Payments; excellent for payroll, HR tech, and fintechs; reliable; strong API; low per-transaction cost at scale
+Weaknesses: UK/EU only — not for global corridors. GBP and EUR focused. Not a collection/acquiring provider. Limited currency support vs. specialist cross-border providers.
+Volume fit: Any size
+Best for: UK/EU payroll platforms, HR tech, embedded finance for non-fintechs, fintechs needing real-time GBP accounts without a PI license, reconciliation-heavy businesses needing virtual accounts per client
+Avoid if: You need global currency coverage, card acquiring, or EM corridor payouts
+
 INDUSTRY USE CASES
 
 --- Gig Economy (e.g. Booksy, beauty/wellness marketplaces, on-demand service platforms) ---
@@ -255,46 +337,54 @@ Recommended stack:
 Key risk: Licensing is the real barrier — not the payments infrastructure. Get your MSB (US), FCA registration (UK), or EMI license (EU) sorted before selecting providers. Wise Platform requires you to hold your own license.
 
 USE CASE ROUTING
-A. Payroll / Contractor Payments: CurrencyCloud, Ebury, Rapyd, Wise, Nium (enterprise), Airwallex
-B. Marketplace: Stripe (Connect), Rapyd, Airwallex, Nium (enterprise)
-C. E-commerce / Collection: Stripe, Rapyd, Nium (enterprise)
+A. Payroll / Contractor Payments: CurrencyCloud, Ebury, Rapyd, Wise, Nium (enterprise), Airwallex, Modulr (UK payroll)
+B. Marketplace: Stripe (Connect), Adyen for Platforms (enterprise), Mangopay (EU platforms), Rapyd, Airwallex, Nium (enterprise)
+C. E-commerce / Collection: Stripe, Checkout.com, Adyen (enterprise), Rapyd, Nium (enterprise)
 D. B2B Cross-border: Ebury, CurrencyCloud, Rapyd, Wise, Nium (enterprise), Airwallex
-E. Embedded Fintech / BaaS: Solaris, Nium (enterprise), Rapyd
+E. Embedded Fintech / BaaS: Solaris, Modulr (UK/EU), Nium (enterprise), Rapyd
 F. Emerging Market Corridors: dLocal + primary provider
 G. Gig Economy: Stripe Connect + Ebury/dLocal; Nium at enterprise
 H. Creator Economy: Wise + dLocal; Stripe for collection; Payoneer for tax forms only
-I. Gaming / iGaming: Rapyd (acquiring) + CurrencyCloud/dLocal (payouts); Nium at enterprise
-J. Travel: Airwallex or Nium (virtual cards) + CurrencyCloud (FX); Stripe for traveler collection
-K. Insurance / Claims: Ebury or CurrencyCloud (payouts) + Stripe (premium collection); dLocal for EM
+I. Gaming / iGaming: Rapyd or Checkout.com (acquiring) + Trustly (deposits, Nordics) + CurrencyCloud/dLocal (payouts); Nium at enterprise
+J. Travel: Airwallex or Nium (virtual cards) + CurrencyCloud (FX); Stripe or Checkout.com for traveler collection
+K. Insurance / Claims: Ebury or CurrencyCloud (payouts) + GoCardless (recurring premiums) + Stripe (card collection); dLocal for EM
 L. Remittance: Wise Platform + dLocal + Rapyd (coverage)
 
 CORRIDOR QUICK GUIDE
-EUR/GBP/USD payouts: CurrencyCloud, Ebury, Wise
+EUR/GBP/USD payouts: CurrencyCloud, Ebury, Wise, Modulr (GBP)
 APAC payouts: Airwallex, Nium, Wise
 LATAM payouts: dLocal (PIX/SPEI), Rapyd
 Africa payouts: dLocal (M-Pesa), Rapyd
-EU local IBANs: Banking Circle, Solaris, Wise
+EU local IBANs: Banking Circle, Solaris, Wise, Modulr
+EU Nordics (open banking): Trustly
 Global exotic coverage: Rapyd (with backup)
 Stablecoin settlement: Rapyd
 Virtual cards (travel/expense/B2B): Nium, Airwallex
+Recurring/subscription collection: GoCardless (bank debit), Stripe (cards)
+EU marketplace escrow: Mangopay
+Enterprise omnichannel: Adyen
 
 QUICK DECISION FILTERS
 Low volume / early stage: Ebury or Stripe
 Broadest local payment coverage: Rapyd (always with a reliable backup)
-Reliability non-negotiable: CurrencyCloud or Ebury
+Reliability non-negotiable: CurrencyCloud, Ebury, or Adyen
 Emerging markets (LATAM/Africa/SEA): dLocal
-Enterprise scale: Nium
-IBANs in client own name: Wise or Banking Circle
+Enterprise scale: Nium or Adyen
+IBANs in client own name: Wise or Banking Circle or Modulr (GBP)
 Pooling account acceptable: Ebury or CurrencyCloud
 FX revenue sharing: CurrencyCloud
 Banking license / full BaaS in EU: Solaris
-Marketplace / gig economy collection: Stripe Connect
+Marketplace / gig economy collection: Stripe Connect or Adyen for Platforms (enterprise) or Mangopay (EU)
 APAC-heavy corridors: Airwallex
 Virtual cards for travel or B2B: Nium or Airwallex
 Creator economy global payouts: Wise + dLocal
-iGaming acquiring: Rapyd (with backup)
+iGaming acquiring: Rapyd or Checkout.com (with backup); Trustly for Nordics deposits
+Insurance premium recurring collection: GoCardless
 Insurance claims payouts: Ebury or CurrencyCloud
 Remittance infrastructure: Wise Platform + dLocal
+Open banking / Pay by Bank: Trustly or GoCardless (VRP)
+UK payroll / embedded accounts: Modulr
+EU platform/marketplace escrow: Mangopay
 Avoid for pure B2B payouts: Payoneer
 
 HOW TO GIVE RECOMMENDATIONS
