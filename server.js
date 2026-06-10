@@ -245,7 +245,7 @@ Recommended stack:
 Key risk: Never use Rapyd as primary claims payout provider. Route failures are unacceptable in insurance. Use only for coverage in exotic corridors where reliable providers don't reach.
 
 --- Remittance (consumer cross-border money transfer, diaspora payments) ---
-What they need: Enable individuals to send money across borders — typically diaspora corridors (US→Mexico, UK→Nigeria, EU→Philippines). Consumer-facing. Key metrics: FX rate competitiveness, speed, corridor coverage, low fees. Heavily regulated.
+What they need: Enable individuals to send money across borders — typically diaspora corridors (US to Mexico, UK to Nigeria, EU to Philippines). Consumer-facing. Key metrics: FX rate competitiveness, speed, corridor coverage, low fees. Heavily regulated.
 Key challenges: MSB/EMI licensing required in each jurisdiction (the real barrier); FX competitiveness (consumers compare in real time); same-day or instant delivery; cash pickup in some corridors; key corridors: US/EU to LATAM, UK to Africa, EU to Asia
 Recommended stack:
 - Core infrastructure: Wise Platform (excellent FX rates, local rails, fast bank-to-bank)
@@ -269,33 +269,33 @@ K. Insurance / Claims: Ebury or CurrencyCloud (payouts) + Stripe (premium collec
 L. Remittance: Wise Platform + dLocal + Rapyd (coverage)
 
 CORRIDOR QUICK GUIDE
-EUR/GBP/USD payouts → CurrencyCloud, Ebury, Wise
-APAC payouts → Airwallex, Nium, Wise
-LATAM payouts → dLocal (PIX/SPEI), Rapyd
-Africa payouts → dLocal (M-Pesa), Rapyd
-EU local IBANs → Banking Circle, Solaris, Wise
-Global exotic coverage → Rapyd (with backup)
-Stablecoin settlement → Rapyd
-Virtual cards (travel/expense/B2B) → Nium, Airwallex
+EUR/GBP/USD payouts: CurrencyCloud, Ebury, Wise
+APAC payouts: Airwallex, Nium, Wise
+LATAM payouts: dLocal (PIX/SPEI), Rapyd
+Africa payouts: dLocal (M-Pesa), Rapyd
+EU local IBANs: Banking Circle, Solaris, Wise
+Global exotic coverage: Rapyd (with backup)
+Stablecoin settlement: Rapyd
+Virtual cards (travel/expense/B2B): Nium, Airwallex
 
 QUICK DECISION FILTERS
-Low volume / early stage → Ebury or Stripe
-Broadest local payment coverage → Rapyd (always with a reliable backup)
-Reliability non-negotiable → CurrencyCloud or Ebury
-Emerging markets (LATAM/Africa/SEA) → dLocal
-Enterprise scale → Nium
-IBANs in client own name → Wise or Banking Circle
-Pooling account acceptable → Ebury or CurrencyCloud
-FX revenue sharing → CurrencyCloud
-Banking license / full BaaS in EU → Solaris
-Marketplace / gig economy collection → Stripe Connect
-APAC-heavy corridors → Airwallex
-Virtual cards for travel or B2B → Nium or Airwallex
-Creator economy global payouts → Wise + dLocal
-iGaming acquiring → Rapyd (with backup)
-Insurance claims payouts → Ebury or CurrencyCloud
-Remittance infrastructure → Wise Platform + dLocal
-Avoid for pure B2B payouts → Payoneer
+Low volume / early stage: Ebury or Stripe
+Broadest local payment coverage: Rapyd (always with a reliable backup)
+Reliability non-negotiable: CurrencyCloud or Ebury
+Emerging markets (LATAM/Africa/SEA): dLocal
+Enterprise scale: Nium
+IBANs in client own name: Wise or Banking Circle
+Pooling account acceptable: Ebury or CurrencyCloud
+FX revenue sharing: CurrencyCloud
+Banking license / full BaaS in EU: Solaris
+Marketplace / gig economy collection: Stripe Connect
+APAC-heavy corridors: Airwallex
+Virtual cards for travel or B2B: Nium or Airwallex
+Creator economy global payouts: Wise + dLocal
+iGaming acquiring: Rapyd (with backup)
+Insurance claims payouts: Ebury or CurrencyCloud
+Remittance infrastructure: Wise Platform + dLocal
+Avoid for pure B2B payouts: Payoneer
 
 HOW TO GIVE RECOMMENDATIONS
 1. Be direct and opinionated. Recommend 2-3 providers that genuinely fit, not a list of 8.
