@@ -4,6 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PSP Scout — Fintech Wingman</title>
+  <!-- Open Graph -->
+  <meta property="og:title" content="PSP Scout — Find your ideal payment partner" />
+  <meta property="og:description" content="Tell PSP Scout about your business and get a reasoned shortlist of PSPs and banking partners — with honest trade-offs, not a generic list. Free to use." />
+  <meta property="og:image" content="https://psp-scout-production.up.railway.app/psp_scout_post_image.png" />
+  <meta property="og:url" content="https://psp-scout-production.up.railway.app/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PSP Scout — Find your ideal payment partner" />
+  <meta name="twitter:description" content="AI-powered PSP recommendations. Describe your business, get a reasoned shortlist." />
+  <meta name="twitter:image" content="https://psp-scout-production.up.railway.app/psp_scout_post_image.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -30,7 +40,6 @@
       flex-shrink: 0;
     }
 
-    /* Fintech Wingman back link with coin logo */
     .back-link {
       display: flex; align-items: center; gap: 7px;
       font-size: 12px; font-weight: 500;
@@ -43,7 +52,6 @@
 
     .header-divider { width: 1px; height: 22px; background: #1f3328; flex-shrink: 0; }
 
-    /* PSP Scout logo */
     .psp-logo {
       width: 34px; height: 34px; flex-shrink: 0;
       background: #132019;
@@ -83,10 +91,7 @@
       display: flex; align-items: center; justify-content: center;
       flex-shrink: 0; margin-top: 2px;
     }
-    .message.assistant .avatar {
-      background: #132019;
-      border: 1.5px solid #3dffa0;
-    }
+    .message.assistant .avatar { background: #132019; border: 1.5px solid #3dffa0; }
     .message.user .avatar { background: #1a2e20; }
 
     .bubble {
@@ -157,11 +162,9 @@
 <body>
 
 <header>
-  <!-- Fintech Wingman back link with coin logo -->
   <a class="back-link" href="https://fintechwingman.com">
     <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
     <div class="fw-coin">
-      <!-- Fintech Wingman logo: 3 diagonal \ bands clipped to circle -->
       <svg width="22" height="22" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
         <defs><clipPath id="fwc"><circle cx="18" cy="18" r="18"/></clipPath></defs>
         <g clip-path="url(#fwc)">
@@ -178,15 +181,12 @@
 
   <div class="header-divider"></div>
 
-  <!-- PSP Scout logo -->
   <div class="psp-logo">
     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
       <circle cx="10" cy="10" r="6.5" stroke="#3dffa0" stroke-width="1.2" fill="none"/>
       <circle cx="10" cy="10" r="2" fill="#3dffa0"/>
-      <!-- compass needle NE -->
       <path d="M10 10 L14.2 5.8" stroke="#3dffa0" stroke-width="1.8" stroke-linecap="round"/>
       <path d="M10 10 L5.8 14.2" stroke="#3dffa0" stroke-width="1.1" stroke-linecap="round" opacity="0.35"/>
-      <!-- cardinal dots -->
       <circle cx="10" cy="3.5" r="0.8" fill="#3dffa0" opacity="0.45"/>
       <circle cx="10" cy="16.5" r="0.8" fill="#3dffa0" opacity="0.45"/>
       <circle cx="3.5" cy="10" r="0.8" fill="#3dffa0" opacity="0.45"/>
@@ -204,29 +204,20 @@
 
 <div id="chat">
   <div class="welcome" id="welcome">
-
-    <!-- Modern radar/compass welcome icon -->
     <div class="welcome-icon">
       <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-        <!-- outer dashed ring -->
         <circle cx="36" cy="36" r="33" stroke="#3dffa0" stroke-width="1" stroke-dasharray="3 7" opacity="0.2"/>
-        <!-- mid ring -->
         <circle cx="36" cy="36" r="22" stroke="#3dffa0" stroke-width="1.2" fill="none" opacity="0.45"/>
-        <!-- inner filled ring -->
         <circle cx="36" cy="36" r="13" fill="rgba(61,255,160,0.07)" stroke="#3dffa0" stroke-width="1.5"/>
-        <!-- center dot -->
         <circle cx="36" cy="36" r="3.5" fill="#3dffa0"/>
-        <!-- compass needle pointing NE -->
         <path d="M36 36 L44 28" stroke="#3dffa0" stroke-width="2.5" stroke-linecap="round"/>
         <path d="M36 36 L28 44" stroke="#3dffa0" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
-        <!-- cardinal ticks -->
         <line x1="36" y1="14" x2="36" y2="20" stroke="#3dffa0" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
         <line x1="36" y1="52" x2="36" y2="58" stroke="#3dffa0" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
         <line x1="14" y1="36" x2="20" y2="36" stroke="#3dffa0" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
         <line x1="52" y1="36" x2="58" y2="36" stroke="#3dffa0" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
       </svg>
     </div>
-
     <h2>Find your ideal payment partner</h2>
     <p>Tell me about your business and I'll recommend the right PSPs and banking partners — with honest tradeoffs, not a generic list.</p>
     <div class="starters">
